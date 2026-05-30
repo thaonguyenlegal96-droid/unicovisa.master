@@ -1,5 +1,15 @@
-<!DOCTYPE html>
-<html lang="vi">
+<!-- Supabase SDK -->
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script>
+  const SUPABASE_URL = 'https://ipupebpswkontaqofyyk.supabase.co'
+  const SUPABASE_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImlwdXBlYnBzd2tvbnRhcW9meXlrIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODAwNDkyMzMsImV4cCI6MjA5NTYyNTIzM30.RKNDvgYcFVqITJiAOHxu4nUTyFh5PC0hlEpRhe6htL4'  // anon public key của bạn
+
+  const { createClient } = supabase
+  const db = createClient(SUPABASE_URL, SUPABASE_KEY)
+
+  // Test kết nối
+  console.log('Supabase connected!')
+</script>
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
